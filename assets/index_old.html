@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="//localhost:35729/livereload.js"></script>
+	<style>
+	body{
+		 	background-position: left top;
+    		/*background-image: url(http://clampettstudio.com/csc/wp-content/uploads/2013/02/CP1362.-World-Finest.jpg);*/
+    		background-repeat: no-repeat;
+    		background-size: cover;
+    	}
+
+    	img{
+    		width:500px;
+    		height:250px;
+    	}
+    </style>
+</head>
+<body>
+<div style=" text-align:center;">
+	<img src="http://clampettstudio.com/csc/wp-content/uploads/2013/02/CP1362.-World-Finest.jpg"/>
+	<H1>Forma de Inscripcion a Los Cachorros</H1>
+	<form action="/registro" method="POST">
+	<table style="border-style:solid; margin-left:25%;">
+	<tr>
+		<td>Nombre(s)</td>
+		<td><input name="nombre" placeholder="Escribe tu nombre carnal..." type="text" required pattern="[A-Za-z]+" maxlength="20" title="Solo letras porfa!" ></td>
+		<td>Ap. Paterno</td>
+		<td><input name="aPaterno" type="text" required pattern="[A-Za-z]+" maxlength="20" title="Solo letras porfa!" ></td>
+		<td>Ap. materno</td>
+		<td><input name="aMaterno" type="text" required pattern="[A-Za-z]+" maxlength="20" title="Solo letras porfa!" ></td>
+	</tr>
+	<tr>
+		<td>Fecha de Nacimiento</td>
+		<td><input name="fecNacimiento" type="date" max="2000-01-01" min="1975-01-01" required></td>
+		<td>Posición</td>
+		<td>
+			<select name="posicion">
+				<option value="portero">Portero</option>
+				<option value="defensa">Defensa</option>
+				<option value="medio">Medio</option>
+				<option value="delantero">Delantero</option>
+			</select>
+		</td>
+		<td>Email</td>
+		<td><input  name="email" type="email"  required> </td>
+	</tr>
+	<tr>
+		<td>Número de goles anotados</td>
+		<td><input name="goles" type="number"></td>
+	</tr>
+	<tr>
+		<td colspan="6">Espectativas del Equipo</td>
+	</tr>
+	<tr>
+		<td colspan="6"><textarea name="espectativas" cols=100 rows=7 required placeholder="dale" ></textarea></td>
+	</tr>
+
+	</table>
+	<br>
+	<br>
+	<input type="submit" value="Inscribete!">
+
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "Welcome": "Bienvenido",
+  "A brand new app.": "Una aplicación de la nueva marca.",
+  "Error.Passport.Password.Invalid": "El usuario/contraseña es inválido",
+  "Error.Passport.Password.Wrong": "El usuario/contraseña es inválido",
+  "Error.Passport.Password.NotSet": "El usuario/contraseña es inválido",
+  "Error.Passport.Username.NotFound": "El usuario/contraseña es inválido",
+  "Error.Passport.User.Exists": "This username is already taken.",
+  "Error.Passport.Email.NotFound": "That email doesn't seem right",
+  "Error.Passport.Email.Missing": "You need to supply an email-address for verification",
+  "Error.Passport.Email.Exists": "This email already exists. So try logging in.",
+  "Error.Passport.Username.Missing": "You need to supply a username",
+  "Error.Passport.Password.Missing": "Oh no, you haven't set a password yet!",
+  "Error.Passport.Generic": "Snap. Something went wrong with authorization."
+}
