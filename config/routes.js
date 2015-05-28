@@ -35,9 +35,15 @@ module.exports.routes = {
   'get /login': 'AuthController.login',
   'get /logout': 'AuthController.logout',
   'get /register': 'AuthController.register',
+  'get /forgot': 'AuthController.forgot',
+  'get /resetview/:id' : 'AuthController.reestablecerview',
+  'get /activate/:id' : 'AuthController.activate',
 
   'post /auth/local': 'AuthController.callback',
   'post /auth/local/:action': 'AuthController.callback',
+  'post /forgot': 'AuthController.resetPassword',
+  'post /reset' : 'AuthController.reestablecerPwd',
+  'post /changepass' : 'AuthController.changepass',
 
   'get /auth/:provider': 'AuthController.provider',
   'get /auth/:provider/callback': 'AuthController.callback',

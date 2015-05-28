@@ -29,12 +29,13 @@ module.exports.policies = {
   
   '*': ['passport', 'sessionAuth'],
 
-'auth': {
-  '*': ['passport']
-},
-'main': {
-  '*': ['passport']
-}
+  'auth': {
+    '*': ['passport'],
+    'changepass' : ['passport', 'sessionAuth']
+  },
+  'main': {
+    '*': ['passport']
+  }
   
   
   

@@ -1,0 +1,20 @@
+<section id="container" class="">
+	<div class="container">
+		<form class="login-form" role="form" action="/forgot" method="post">        
+			<div class="login-wrap">
+				<div class="row text-center">
+					<h2>Reestablecer Contraseña</h2>
+					<br>
+				</div>
+				<% if(typeof msg != 'undefined'){%>
+					<%=msg%>
+				<%}%>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="icon_profile"></i></span>
+					<input type="text"  name="email" placeholder="Escribe tu correo electrónico" required class="form-control" autofocus autocomplete="off" >
+				</div>
+				<button class="btn btn-primary btn-lg btn-block" type="submit">Reestablecer Contraseña</button>
+			</div>
+		</form>
+	</div>
+</section>

@@ -223,7 +223,7 @@
                     <!-- alert notification end-->
                     <!-- user login dropdown start-->
                     <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:;">
                             <span class="profile-ava">
                                 <img alt="" src="img/avatar1_small.jpg">
                             </span>
@@ -235,23 +235,11 @@
                             <li class="eborder-top">
                                 <a href="#"><i class="icon_profile"></i> My Profile</a>
                             </li>
-                            <li>
-                                <a href="#"><i class="icon_mail_alt"></i> My Inbox</a>
+                            <li >
+                                <a href="/#/changePassword"><i class="icon_profile"></i> Cambiar Contraseña</a>
                             </li>
                             <li>
-                                <a href="#"><i class="icon_clock_alt"></i> Timeline</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icon_chat_alt"></i> Chats</a>
-                            </li>
-                            <li>
-                                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
-                            </li>
-                            <li>
-                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
-                            </li>
-                            <li>
-                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                                <a href="/logout"><i class="icon_key_alt"></i> Cerrar Sesión</a>
                             </li>
                         </ul>
                     </li>
@@ -269,11 +257,36 @@
               <ul class="sidebar-menu">                
                   <li class="active">
                       <a class="" href="/#/">
-                          <i class="icon_house_alt"></i>
+                          <i class="fa fa-tachometer"></i>
                           <span>Dashboard</span>
                       </a>
                   </li>
-          <li class="sub-menu">
+                  <!--* * * USUARIOS ESTO SOLO LO VE EL ADMIN * * * -->
+                  <li >
+                      <a href="/#/usuarios" class="">
+                          <i class="icon_group"></i>
+                          <span>Usuarios</span>
+                         
+                      </a>
+                  </li>  
+                  <!--* * * CATEGORIAS ESTO SOLO LO VE EL ADMIN * * * -->
+                  <li >
+                      <a href="/#/categorias" class="">
+                          <i class="fa fa-glass"></i>
+                          <span>Categorias</span>
+                         
+                      </a>
+                  </li>  
+
+                  <!--* * * USUARIOS ESTO SOLO LO VE EL ADMIN * * * -->
+                  <li >
+                      <a href="/#/kupones" class="">
+                          <i class="fa fa-gift"></i>
+                          <span>Kupones</span>
+                         
+                      </a>
+                  </li>  
+                  <!--li class="sub-menu">
                       <a href="javascript:;" class="">
                           <i class="icon_document_alt"></i>
                           <span>Forms</span>
@@ -301,7 +314,7 @@
                           <i class="icon_genius"></i>
                           <span>Widgets</span>
                       </a>
-                  </li>
+                  </li-->
                   <li>                     
                       <a class="" href="/#/graphicsview">
                           <i class="icon_piechart"></i>
@@ -311,7 +324,7 @@
                                          
                   </li>
                              
-                  <li class="sub-menu">
+                  <!--li class="sub-menu">
                       <a href="javascript:;" class="">
                           <i class="icon_table"></i>
                           <span>Tables</span>
@@ -334,7 +347,7 @@
                           <li><a class="" href="blank.html">Blank Page</a></li>
                           <li><a class="" href="404.html">404 Error</a></li>
                       </ul>
-                  </li>
+                  </li-->
                   
               </ul>
               <!-- sidebar menu end-->
@@ -342,3 +355,21 @@
       </aside>
       <!--sidebar end-->
       <ng-view></ng-view>
+     
+
+     <div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">{{modal.title}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{modal.msg}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
